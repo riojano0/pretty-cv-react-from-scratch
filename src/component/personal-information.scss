@@ -1,0 +1,8 @@
+.personal-information {
+    width: 350px;  
+    border: 1px solid green;
+
+    &--contact {
+        border: 1px solid red;
+    }
+}

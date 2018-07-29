@@ -3,11 +3,39 @@ const React = require('react');
 class PersonalInformation extends React.Component {
 
     render() {
-        const props = this.props;
         return (
             <div className="personal-information">
-                <h1>{ props.lastName }</h1>
+                {this.renderNames()}
+                {this.renderContactInformation()}
+            </div>
+        )
+    }
+
+    renderNames = () => {
+        return (
+            <div className="personal-information--names">
+                <h1>{ this.props.lastName }</h1>
                 <h2>{ this.getFirstAndMiddleName() }</h2>
+            </div>
+        )
+    }
+
+    renderContactInformation = () => {
+        const contactKeys = ["birthdate", "location", "email", "cellphone", "linkedin", "github"]
+        const contactsMethod = () => {
+            var contact;
+            return contactKeys.map((key) => {
+                contact = this.props[key];
+                if(contact) {
+                    return <li key={key}>{key.toUpperCase()}:{contact}</li>
+                }
+            })
+        }
+        return (
+            <div className="personal-information--contact">
+                <ul>
+                    { contactsMethod() }
+                </ul>
             </div>
         )
     }

@@ -1,0 +1,35 @@
+$icon-code : "/img/work_area/icon_code.png";
+$icon-academic : "/img/work_area/icon_psyche.png";
+$icon-default : "/img/work_area/icon_default.png";
+
+@mixin icon-mixin {
+        @content;
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 25px;
+        margin: 0;
+        padding: 0;
+}
+
+.work-experience {
+    width: 606px;
+    border: 1px solid orange;
+
+    &--icon {
+        &-default {
+            @include icon-mixin {
+                background-image: url($icon-default);
+            }
+        }
+        &-code {
+            @include icon-mixin {
+                background-image: url($icon-code);
+            }
+        }
+        &-academic {
+            @include icon-mixin {
+                background-image: url($icon-academic);
+            }
+        }
+    }
+}

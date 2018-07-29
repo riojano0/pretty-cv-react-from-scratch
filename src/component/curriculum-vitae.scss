@@ -1,7 +1,17 @@
-.curriculim-vitae {
-    width: 300px;
-
+.curriculum-vitae {
+    margin: 0 auto;
+    width: 960px; 
+    background-color: lightgrey;
+    
     &--section {
-        background-color: red;
+        background-color: brown;
     }
+
+    &--left-wraper{
+        display:inline-block
+      }
+      
+    &--right-wraper{
+        display:inline-block
+      }
 }
