@@ -1,0 +1,38 @@
+@import "./../container/app-global";
+
+$icon-code: "/img/education_area/icon_code.png";
+$icon-psyche: "/img/education_area/icon_psyche.png";
+$icon-school: "/img/education_area/icon_school.png";
+$icon-education: "/img/education_area/icon_education.png";
+
+.education {
+  width: $curriculum-right-section-width;
+  border: 1px solid orange;
+
+  &--title {
+    font: $section-title-font;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+
+    &-icon {
+      @include icon-mixin(
+        $size: 50px,
+        $icon: $icon-education,
+        $margin-top: -15px
+      );
+    }
+  }
+
+  &--icon {
+    &-school {
+      @include icon-mixin($icon: $icon-school);
+    }
+    &-code {
+      @include icon-mixin($icon: $icon-code);
+    }
+    &-psyche {
+      @include icon-mixin($icon: $icon-psyche);
+    }
+  }
+}

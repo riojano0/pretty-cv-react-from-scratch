@@ -55,7 +55,32 @@ class App extends React.Component {
                     "toDate": "2012-11-01",
                     "description": "Description text"
                 }
-            ]
+            ],
+            "education": [{
+                "icon": "code",
+                "complete": true,
+                "fromDate": "2016",
+                "toDate": "2018",
+                "certification": "Tecnicatura en Programacion",
+                "center": "Universidad Tecnologia Cordoba - FRC",
+                "location": "Cordoba - Cordoba"
+            }, {
+                "icon": "psyche",
+                "complete": false,
+                "fromDate": "2016",
+                "toDate": "discontinued",
+                "certification": "Licenciatura en Psicologia",
+                "center": "Facultad de Psicologia - FRC",
+                "location": "Cordoba - Cordoba"
+            }, {
+                "icon": "school",
+                "complete": true,
+                "fromDate": "2001",
+                "toDate": "2006",
+                "certification": "Tecn, en Informacion Personal y Profesional",
+                "center": "Juan Abdala Chayep - N° 713",
+                "location": "Esquel - Chubut"
+            }]
         });
     }
 }
