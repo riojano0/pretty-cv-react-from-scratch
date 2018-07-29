@@ -1,17 +1,18 @@
-.curriculum-vitae {
-    margin: 0 auto;
-    width: 960px; 
-    background-color: lightgrey;
-    
-    &--section {
-        background-color: brown;
-    }
+@import "./../container/app-global";
 
-    &--left-wraper{
-        display:inline-block
-      }
-      
-    &--right-wraper{
-        display:inline-block
-      }
+.curriculum-vitae {
+  margin: 0 auto;
+  width: $curriculum-width;
+  
+  ul {
+    list-style-type: none;
+  }
+
+  &--left-wraper {
+    float: left;
+  }
+
+  &--right-wraper {
+    float: right;
+  }
 }

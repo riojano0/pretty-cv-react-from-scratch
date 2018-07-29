@@ -1,0 +1,21 @@
+$section-title-font: 16px sans-serif;
+$curriculum-width: 960px;
+$curriculum-left-section-width: 350px;
+$curriculum-right-section-width: 606px;
+
+@mixin icon-mixin(
+  $size: 25px,
+  $icon: null,
+  $margin-top: -10px,
+  $margin-left: 5px,
+  $position: absolute
+) {
+  background-image: url($icon);
+  background-repeat: no-repeat;
+  width: $size;
+  height: $size;
+  margin-left: $margin-left;
+  margin-top: $margin-top;
+  position: $position;
+  @content;
+}

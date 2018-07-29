@@ -1,35 +1,34 @@
-$icon-code : "/img/work_area/icon_code.png";
-$icon-academic : "/img/work_area/icon_psyche.png";
-$icon-default : "/img/work_area/icon_default.png";
+@import "./../container/app-global";
 
-@mixin icon-mixin {
-        @content;
-        background-repeat: no-repeat;
-        width: 25px;
-        height: 25px;
-        margin: 0;
-        padding: 0;
-}
+$icon-code: "/img/work_area/icon_code.png";
+$icon-academic: "/img/work_area/icon_psyche.png";
+$icon-default: "/img/work_area/icon_default.png";
+$icon-work: "/img/work_area/icon_work.png";
 
 .work-experience {
-    width: 606px;
-    border: 1px solid orange;
+  width: $curriculum-right-section-width;
+  border: 1px solid orange;
 
-    &--icon {
-        &-default {
-            @include icon-mixin {
-                background-image: url($icon-default);
-            }
-        }
-        &-code {
-            @include icon-mixin {
-                background-image: url($icon-code);
-            }
-        }
-        &-academic {
-            @include icon-mixin {
-                background-image: url($icon-academic);
-            }
-        }
+  &--title {
+    font: $section-title-font;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+
+    &-icon {
+      @include icon-mixin($size: 50px, $icon: $icon-work);
     }
+  }
+
+  &--icon {
+    &-default {
+      @include icon-mixin($icon: $icon-default);
+    }
+    &-code {
+      @include icon-mixin($icon: $icon-code);
+    }
+    &-academic {
+      @include icon-mixin($icon: $icon-academic);
+    }
+  }
 }

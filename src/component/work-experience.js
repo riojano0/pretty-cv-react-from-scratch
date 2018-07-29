@@ -1,11 +1,15 @@
 const React = require('react');
-// const iconCoding = require('../img/work_area/icon_coding.png')
 
 class WorkExperience extends React.Component {
 
     render() {
         return (
             <div className="work-experience">
+                <div className="work-experience--title">
+                    <div className="work-experience--title-icon"/>
+                    <h2>Work Experience</h2>
+                    <hr></hr>
+                </div>
                 {this.renderWorkExperiences()}
             </div>
         );

@@ -1,6 +1,7 @@
 const React = require('react');
 const PersonalInformation = require('./personal-information');
 const WorkExperience = require('./work-experience');
+const Education = require('./education');
 
 class CurriculumVitae extends React.Component {
 
@@ -14,6 +15,7 @@ class CurriculumVitae extends React.Component {
                 </div>
                 <div className="curriculum-vitae--right-wraper">
                     <WorkExperience {...props.workExperiences} />
+                    <Education {...props.education} />
                 </div>
             </div>
         );
