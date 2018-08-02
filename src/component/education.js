@@ -29,7 +29,7 @@ class Education extends React.Component{
                 {this.renderIcon(education.icon)}
                 <ul>
                     <li>Certification : {education.certification}</li>
-                    <li>Finished : {education.complete} </li>
+                    <li>Finished : {(education.complete) ? 'Yes' : 'No'} </li>
                     <li>From : {education.fromDate} - {education.toDate}</li>
                     <li>Center : {education.center}</li>
                     <li>Location : {education.location}</li>

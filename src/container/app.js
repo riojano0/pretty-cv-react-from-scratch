@@ -40,7 +40,16 @@ class App extends React.Component {
                     "fromDate": "2016-06",
                     "toDate": "2017-02",
                     "description": "Description text"
-                }, {
+                }, 
+                {
+                    "icon": "Code",
+                    "company": "PyDevAr",
+                    "position": "Python Freelance",
+                    "fromDate": "2016-07",
+                    "toDate": "2016-09",
+                    "description": "Sikuli cases to use on testing"
+                },
+                {
                     "icon": "Academic",
                     "company": "Facultad de Psicologia-UNC",
                     "position": "Student Assistant",
@@ -80,7 +89,39 @@ class App extends React.Component {
                 "certification": "Tecn, en Informacion Personal y Profesional",
                 "center": "Juan Abdala Chayep - N° 713",
                 "location": "Esquel - Chubut"
-            }]
+            }],
+            "achievements" : [
+                {
+                    "certification": "Bootcamp Java",
+                    "center": "Globant",
+                    "year": "2017"
+                },
+                {
+                    "certification": "Single Page Web Apps with AngularJS",
+                    "center": "Coursera",
+                    "year": "2017"
+                },
+                {
+                    "certification": "Diplomatura ne Desarrolo Web",
+                    "center": "Universidad Tecnologia Cordoba - FRC",
+                    "year": "2017"
+                },
+                {
+                    "certification": "Android Developer",
+                    "center": "EmplearTEC",
+                    "year": "2016"
+                },
+                {
+                    "certification": "Python as a tool for engineering",
+                    "center": "FCEFyN",
+                    "year": "2015"
+                },
+                {
+                    "certification": "Python Developer",
+                    "center": "EmplearTEC",
+                    "year": "2015"
+                }
+            ]
         });
     }
 }

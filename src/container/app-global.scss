@@ -3,6 +3,21 @@ $curriculum-width: 960px;
 $curriculum-left-section-width: 350px;
 $curriculum-right-section-width: 606px;
 
+//Icon Works
+$icon-code: "/img/work_area/icon_code.png";
+$icon-academic: "/img/work_area/icon_psyche.png";
+$icon-default: "/img/work_area/icon_default.png";
+$icon-work: "/img/work_area/icon_work.png";
+
+//Icons Education
+$icon-code: "/img/education_area/icon_code.png";
+$icon-psyche: "/img/education_area/icon_psyche.png";
+$icon-school: "/img/education_area/icon_school.png";
+$icon-education: "/img/education_area/icon_education.png";
+
+//Icons Achievement
+$icon-achievement: "/img/achievement_area/icon_achievement.png";
+
 @mixin icon-mixin(
   $size: 25px,
   $icon: null,
