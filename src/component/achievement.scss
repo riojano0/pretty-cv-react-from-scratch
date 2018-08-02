@@ -1,0 +1,22 @@
+@import "./../container/app-global";
+
+.achievement {
+    width: $curriculum-right-section-width;
+    border: 1px solid orange;
+
+    &--title {
+        font: $section-title-font;
+        margin-top: 10px;
+        text-align: center;
+        text-transform: uppercase;
+    
+        &-icon {
+          @include icon-mixin(
+            $size: 50px,
+            $icon: $icon-achievement,
+            $margin-top: -15px
+          );
+        }
+      }
+  
+}
