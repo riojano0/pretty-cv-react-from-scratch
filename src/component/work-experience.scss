@@ -11,8 +11,12 @@
     text-transform: uppercase;
 
     &-icon {
-      @include icon-mixin($size: 50px, $icon: $icon-work);
+      @include icon-mixin($size: 50px, $icon: $icon-work, $margin-top: -10px);
     }
+  }
+
+  &--date {
+    @include date-mixin;
   }
 
   &--icon {

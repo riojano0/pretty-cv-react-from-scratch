@@ -7,4 +7,22 @@
   &--contact {
     border: 1px solid red;
   }
+
+  &--names {
+    text-align: center;
+  }
+
+  &--icon-qc-code {
+
+    @include icon-mixin($icon: $icon_qr_code, $size: 235px, $margin-left: 0, $position: null){
+      margin: 0 auto;
+    };
+
+    &-wraper{
+      border: 1px solid red;
+      width: $curriculum-left-section-width;
+      height: 235px;
+    }
+  }
+
 }

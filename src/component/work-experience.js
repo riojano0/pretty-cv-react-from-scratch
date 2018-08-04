@@ -28,9 +28,9 @@ class WorkExperience extends React.Component {
             <div className={"work-experience--" + work.company} key={index}>
                 {this.renderIcon(work.icon)}
                 <ul>
+                    <li><strong>{work.position}</strong></li>
+                    <div className="work-experience--date">{work.fromDate} / {work.toDate}</div>
                     <li>Company : {work.company}</li>
-                    <li>From : {work.fromDate} - {work.toDate}</li>
-                    <li>Position : {work.position}</li>
                     <li>Description : {work.description}</li>
                 </ul>
             </div>

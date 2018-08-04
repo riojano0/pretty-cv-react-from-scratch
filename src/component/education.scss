@@ -19,6 +19,10 @@
     }
   }
 
+  &--date {
+    @include date-mixin;
+  }
+
   &--icon {
     &-school {
       @include icon-mixin($icon: $icon-school);

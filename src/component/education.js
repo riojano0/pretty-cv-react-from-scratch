@@ -28,9 +28,9 @@ class Education extends React.Component{
             <div className={"education--" + education.certification} key={index}>
                 {this.renderIcon(education.icon)}
                 <ul>
-                    <li>Certification : {education.certification}</li>
+                    <li><strong>{education.certification}</strong></li>
+                    <div className="education--date">{education.fromDate} / {education.toDate}</div>
                     <li>Finished : {(education.complete) ? 'Yes' : 'No'} </li>
-                    <li>From : {education.fromDate} - {education.toDate}</li>
                     <li>Center : {education.center}</li>
                     <li>Location : {education.location}</li>
                 </ul>

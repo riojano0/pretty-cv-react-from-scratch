@@ -7,6 +7,7 @@ class PersonalInformation extends React.Component {
             <div className="personal-information">
                 {this.renderNames()}
                 {this.renderContactInformation()}
+                {this.renderQrCodeSection()}
             </div>
         )
     }
@@ -36,6 +37,14 @@ class PersonalInformation extends React.Component {
                 <ul>
                     { contactsMethod() }
                 </ul>
+            </div>
+        )
+    }
+
+    renderQrCodeSection = () => {
+        return (
+            <div className="personal-information--icon-qc-code-wraper">
+                <div className="personal-information--icon-qc-code"/>
             </div>
         )
     }
