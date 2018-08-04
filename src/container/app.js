@@ -32,7 +32,7 @@ class App extends React.Component {
                     "position": "Java Developer",
                     "fromDate": "2017-02",
                     "toDate": "Current",
-                    "description": "Description text"
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
                 }, {
                     "icon": "Misc",
                     "company": "Allus Global BPO Center",
@@ -53,15 +53,15 @@ class App extends React.Component {
                     "icon": "Academic",
                     "company": "Facultad de Psicologia-UNC",
                     "position": "Student Assistant",
-                    "fromDate": "2012-06-01",
-                    "toDate": "2014-11-01",
-                    "description": "Description text"
+                    "fromDate": "2012-06",
+                    "toDate": "2014-11",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
                 }, {
                     "icon": "Academic",
                     "company": "Facultad de Psicologia-UNC",
                     "position": "Counselor of HCD",
-                    "fromDate": "2012-06-01",
-                    "toDate": "2012-11-01",
+                    "fromDate": "2012-06",
+                    "toDate": "2012-11",
                     "description": "Description text"
                 }
             ],
@@ -76,7 +76,7 @@ class App extends React.Component {
             }, {
                 "icon": "psyche",
                 "complete": false,
-                "fromDate": "2016",
+                "fromDate": "2008",
                 "toDate": "discontinued",
                 "certification": "Licenciatura en Psicologia",
                 "center": "Facultad de Psicologia - FRC",
@@ -92,32 +92,38 @@ class App extends React.Component {
             }],
             "achievements" : [
                 {
-                    "certification": "Bootcamp Java",
+                    "icon": "java",
+                    "achievement": "Bootcamp Java",
                     "center": "Globant",
                     "year": "2017"
                 },
                 {
-                    "certification": "Single Page Web Apps with AngularJS",
+                    "icon": "angular",
+                    "achievement": "Single Page Web Apps with AngularJS",
                     "center": "Coursera",
                     "year": "2017"
                 },
                 {
-                    "certification": "Diplomatura ne Desarrolo Web",
+                    "icon": "code",
+                    "achievement": "Diplomatura ne Desarrolo Web",
                     "center": "Universidad Tecnologia Cordoba - FRC",
                     "year": "2017"
                 },
                 {
-                    "certification": "Android Developer",
+                    "icon": "android",
+                    "achievement": "Android Developer",
                     "center": "EmplearTEC",
                     "year": "2016"
                 },
                 {
-                    "certification": "Python as a tool for engineering",
+                    "icon": "python",
+                    "achievement": "Python as a tool for engineering",
                     "center": "FCEFyN",
                     "year": "2015"
                 },
                 {
-                    "certification": "Python Developer",
+                    "icon": "python",
+                    "achievement": "Python Developer",
                     "center": "EmplearTEC",
                     "year": "2015"
                 }

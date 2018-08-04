@@ -9,14 +9,16 @@ class Achievement extends React.Component {
                     <h2>Achievements</h2>
                     <hr></hr>
                 </div>
-                {this.renderAchievements()}
+                <div className="achievement--timeline">
+                    {this.renderAchievements()}
+                </div>
             </div>
         )
     }
 
     renderAchievements = () => {
         const achievements = Object.values(this.props);
-        achievements.sort((first, second) => first.year > second.year);
+        achievements.sort((first, second) => first.year < second.year);
 
         return achievements.map((achievement, index) => {
             return this.renderAchievement(achievement, index);
@@ -24,22 +26,24 @@ class Achievement extends React.Component {
     }
 
     renderAchievement = (achievement, index) => {
-        //TODO ADD TIMELINE
         return (
-            <div className={"education--" + achievement.certification} key={index}>
+            
+            <div className={"achievement--" + achievement.certification} key={index}>
                 {this.renderIcon(achievement.icon)}
+                <div className={"achievement--timeline-year-wrapper"}>
+                    <h4 className={"achievement--timeline-year"}>{achievement.year}</h4>
+                </div>
                 <ul>
-                    <li>Certification : {achievement.certification}</li>
-                    <li>Center : {achievement.center}</li>
-                    <li>Year : {achievement.year}</li>
+                    <li>Achievement : {achievement.achievement}</li>
+                    <li><strong>{achievement.center}</strong></li>
                 </ul>
             </div>
         )
     }
 
     renderIcon = (iconType) => {
-        let icon = "default";
-        const icons = ["angular", "code", "java", "python"];
+        let icon = "code";
+        const icons = ["android", "angular", "java", "python"];
         if (iconType) {
             iconType = iconType.toLowerCase();
             if (icons.includes(iconType)) {

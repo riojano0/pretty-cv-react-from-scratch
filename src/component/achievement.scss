@@ -18,5 +18,71 @@
           );
         }
       }
+
+    &--icon {
+      &-android {
+        @include icon-mixin($icon: $icon-android);
+      }
+      &-angular {
+        @include icon-mixin($icon: $icon-angular);
+      }
+      &-code {
+        @include icon-mixin($icon: $icon-code);
+      }
+      &-java {
+        @include icon-mixin($icon: $icon-java);
+      }
+      &-python {
+        @include icon-mixin($icon: $icon-python);
+      }
+    }
+
+    &--timeline {
+      width:100%;
+      max-width:800px;
+      background:#fff;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        top: -17px;
+        left:calc(85% + 15px);
+        bottom: 0px;
+        width: 4px;
+        background: salmon;
+      }
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      } 
+
+      &-year{
+        position:relative; 
+        top:-16px;
+      }
+
+      &-year-wrapper{
+        float: right;
+        width: 33%;
+        height: 50px;
+        padding-right: 25px;
+        text-align: right;
+        position: relative;
+
+        &:before {
+          content: '';
+          position: absolute;
+          width: 7px;
+          height: 7px;
+          border: 4px solid salmon;
+          background-color:#fff;
+          border-radius:100%;
+          top: 15%;
+          left: 64%;
+          z-index: 99;
+        }
+      }
+    }
   
 }
