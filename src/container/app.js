@@ -28,14 +28,14 @@ class App extends React.Component {
             "workExperiences": [
                 {
                     "icon": "Code",
-                    "company": "Globant",
+                    "site": "Globant",
                     "position": "Java Developer",
                     "fromDate": "2017-02",
                     "toDate": "Current",
                     "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
                 }, {
                     "icon": "Misc",
-                    "company": "Allus Global BPO Center",
+                    "site": "Allus Global BPO Center",
                     "position": "Technical Service Agent",
                     "fromDate": "2016-06",
                     "toDate": "2017-02",
@@ -43,7 +43,7 @@ class App extends React.Component {
                 }, 
                 {
                     "icon": "Code",
-                    "company": "PyDevAr",
+                    "site": "PyDevAr",
                     "position": "Python Freelance",
                     "fromDate": "2016-07",
                     "toDate": "2016-09",
@@ -51,14 +51,14 @@ class App extends React.Component {
                 },
                 {
                     "icon": "Academic",
-                    "company": "Facultad de Psicologia-UNC",
+                    "site": "Facultad de Psicologia-UNC",
                     "position": "Student Assistant",
                     "fromDate": "2012-06",
                     "toDate": "2014-11",
                     "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
                 }, {
                     "icon": "Academic",
-                    "company": "Facultad de Psicologia-UNC",
+                    "site": "Facultad de Psicologia-UNC",
                     "position": "Counselor of HCD",
                     "fromDate": "2012-06",
                     "toDate": "2012-11",

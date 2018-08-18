@@ -30,7 +30,7 @@ class WorkExperience extends React.Component {
                 <ul>
                     <li><strong>{work.position}</strong></li>
                     <div className="work-experience--date">{work.fromDate} / {work.toDate}</div>
-                    <li>Company : {work.company}</li>
+                    <li>Site : {work.company}</li>
                     <li>Description : {work.description}</li>
                 </ul>
             </div>

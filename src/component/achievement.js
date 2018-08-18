@@ -1,6 +1,7 @@
 const React = require('react');
 
 class Achievement extends React.Component {
+
     render() {
         return (
             <div className="achievement">
